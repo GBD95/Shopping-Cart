@@ -78,7 +78,7 @@ subbmitButton.onclick = function(e) {
     const product = document.createElement('div');
     product.classList.add('product');
     product.innerHTML = `
-        <img class="product-img" src="/images/default-coffe.jpg" alt="Coffe beans">
+        <img class="product-img" src="../images/default-coffe.jpg" alt="Coffe beans">
         <div class="product-text">
             <h3 class="product-name">${newProduct.name}</h3>
             <h3 class="product-price">${newProduct.price} din</h3>
