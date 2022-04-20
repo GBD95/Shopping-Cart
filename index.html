@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Webshop Cart</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <script defer="defer" src="/main.js"></script>
+    <script defer="defer" type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script defer="defer" nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</head>
+<body>
+    <header class="header">
+            <div class="container">
+                <div class="logo-div">
+                    <h1>Logo</h1>
+                </div>
+                <div class="btn-div">
+                    <button id="cart"><span><ion-icon name="cart-outline"></ion-icon></span> <span>Cart</span> <span>0</span></button>
+                    <button id="new-product"><ion-icon name="add-outline"></ion-icon> New product</button>
+            </div>
+        </div>
+    </header>
+
+    <main id="main">
+        <div class="main-container">
+
+            <div class="product">
+                <img class="product-img" src="/images/default-coffe.jpg" alt="Coffe beans">
+                <div class="product-text">
+                    <h3 class="product-name">Kafa</h3>
+                    <h3 class="product-price">1250 din</h3>
+                    <p class="product-description">Ova kafa je ultra dobra</p>
+                    <button id="buy-btn" class="btn">Add to cart</button>
+                </div>
+            </div>
+            <div class="product">
+                <img class="product-img" src="/images/default-coffe.jpg" alt="Coffe beans">
+                <div class="product-text">
+                    <h3 class="product-name">Kafa</h3>
+                    <h3 class="product-price">1250 din</h3>
+                    <p class="product-description">Ova kafa je ultra dobra</p>
+                    <button id="buy-btn" class="btn">Add to cart</button>
+                </div>
+            </div>
+            <div class="product">
+                <img class="product-img" src="/images/default-coffe.jpg" alt="Coffe beans">
+                <div class="product-text">
+                    <h3 class="product-name">Kafa</h3>
+                    <h3 class="product-price">1250 din</h3>
+                    <p class="product-description">Ova kafa je ultra dobra</p>
+                    <button id="buy-btn" class="btn">Add to cart</button>
+                </div>
+            </div>
+            <div class="product">
+                <img class="product-img" src="/images/default-coffe.jpg" alt="Coffe beans">
+                <div class="product-text">
+                    <h3 class="product-name">Kafa</h3>
+                    <h3 class="product-price">1250 din</h3>
+                    <p class="product-description">Ova kafa je ultra dobra</p>
+                    <button id="buy-btn" class="btn">Add to cart</button>
+                </div>
+            </div>
+            <div class="product">
+                <img class="product-img" src="/images/default-coffe.jpg" alt="Coffe beans">
+                <div class="product-text">
+                    <h3 class="product-name">Kafa</h3>
+                    <h3 class="product-price">1250 din</h3>
+                    <p class="product-description">Ova kafa je ultra dobra</p>
+                    <button id="buy-btn" class="btn">Add to cart</button>
+                </div>
+            </div>
+            <div class="product">
+                <img class="product-img" src="/images/default-coffe.jpg" alt="Coffe beans">
+                <div class="product-text">
+                    <h3 class="product-name">Kafa</h3>
+                    <h3 class="product-price">1250 din</h3>
+                    <p class="product-description">Ova kafa je ultra dobra</p>
+                    <button id="buy-btn" class="btn">Add to cart</button>
+                </div>
+            </div>
+        </div>
+    </main>
+    <div id="cartModal" class="modal">
+    
+        <div class="modal-content">
+            <div class="modal-header">
+                <span id="close" class="close" >X</span>
+                <h1>SHOPING CART</h1>
+            </div>
+            <div class="modal-body">
+                
+                
+            </div>
+            <div class="modal-footer">
+                <p id="sum"></p>
+                <button>Purchese</button>
+            </div>
+
+        </div>
+    </div>
+    <div id="new-product-modal" class="new-product-modal">
+    
+        <div class="new-product-content">
+            <div class="new-product-header">
+                <h1>New product</h1>
+                <span id="close-new-product" class="close-new-product" >X</span>
+            </div>
+            <div class="new-product-body">
+                <form id="new-product-form">
+                        <label for="new-product-name">Name of the product</label> 
+                        <input id="new-product-name" type="text">
+                        
+                        <label for="new-product-price">Product price</label>
+                        <input id="new-product-price" type="number">
+                        
+                        <label for="new-product-descrtiption">Product description</label>
+                        <input id="new-product-descrtiption" type="text">
+
+                    </div>
+                    <div class="new-product-footer">
+                        <button id="subbmit-btn" type="submit">Save</button>
+                </form>
+            </div>
+
+        </div>
+    </div>
+</body>
+</html>
